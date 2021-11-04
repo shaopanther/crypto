@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>BitCoin Rate Exchanges</title>
+  </head>
+  <body>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img style="width: 300px;" src="./logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link " href="index.html">Prices </a>
+            <a class="nav-item nav-link active" href="checker.html">Exchanges <span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <div class="container mb-0">
+          <div class="col-md-12 text-center">
+            <h1>Oppertunity Checker</h1>
+            <button class="custom-btn btn-3" id="check"><span id="btn-text">Check Opportunity</span></button>
+            <button class="custom-btn btn-3 d-none" id="refresh"><span id="btn-text">Go Back</span></button>
+          </div>
+      </div>
+     
+    <!-- informations -->
+    <div class="container-fluid p-0 d-none mt-0" id="info">
+    <div class="row mr-0">
+        <div class="col-md-6">
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>₿</h2>
+                            <h3 id="buy_btc_heading"></h3>
+                            <p id="buy_btc_desc" class="text-center"></p>
+                            <a href="#" id="buy_btc_link">Buy BTC Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>₿</h2>
+                            <h3 id="sell_btc_heading"></h3>
+                            <p id="sell_btc_desc"></p>
+                            <a href="#" id="sell_btc_link">Sell BTC Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" >
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Ξ</h2>
+                            <h3 id="buy_eth_heading"></h3>
+                            <p id="buy_eth_desc"></p>
+                            <a href="#" id="buy_eth_link">Buy ETH Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Ξ</h2>
+                            <h3 id="sell_eth_heading"></h3>
+                            <p id="sell_eth_desc"></p>
+                            <a href="#" id="sell_eth_link">Sell ETH Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
