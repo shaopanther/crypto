@@ -128,14 +128,14 @@ $('#trx_val').on('keyup', function(e) {
 });
 $('#total').on('click', function(e) {
     e.preventDefault();
-    var trx_total=  parseInt($('#total_trx_price_hide').val());
-    var ada_total=  parseInt($('#total_ada_price_hide').val());
+    var trx_total=  parseFloat($('#total_trx_price_hide').val());
+    var ada_total=  parseFloat($('#total_ada_price_hide').val());
     if(!trx_total || !ada_total){
         alert('Please Provide Number of ADA & TRX');
         return;
     }
    var total= trx_total+ada_total;
-    $('#total_investment').text('Total Investment: '+ total + '$');
+    $('#total_investment').text('Total Investment: '+ total.toFixed(2) + '$');
     
 });
 
