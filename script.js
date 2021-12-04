@@ -120,10 +120,10 @@ $('#trx_val').on('keyup', function(e) {
     var trx_balance=$(this).val();
     var trx_total= trx_balance*trx_price;
     $('#total_trx_price_hide').val(trx_total);
-    $('#trx-heading').text('TRX Details');
-    $('#total_trx_balance').text('Total TRX Balance: '+ trx_balance +'TRX');
-    $('#trx_price').text('TRX Price Today: '+ trx_price + '$');
-    $('#total_trx_price').text('Total TRX Price: '+ trx_total.toFixed(2) + '$');
+    $('#trx-heading').text('CKB Details');
+    $('#total_trx_balance').text('Total CKB Balance: '+ trx_balance +'CKB');
+    $('#trx_price').text('CKB Price Today: '+ trx_price + '$');
+    $('#total_trx_price').text('Total CKB Price: '+ trx_total.toFixed(2) + '$');
     
 });
 $('#total').on('click', function(e) {
@@ -131,7 +131,7 @@ $('#total').on('click', function(e) {
     var trx_total=  parseFloat($('#total_trx_price_hide').val());
     var ada_total=  parseFloat($('#total_ada_price_hide').val());
     if(!trx_total || !ada_total){
-        alert('Please Provide Number of ADA & TRX');
+        alert('Please Provide Number of ADA & CKB');
         return;
     }
    var total= trx_total+ada_total;
